@@ -8,16 +8,22 @@ exports.createSchemaCustomization = ({ actions }, settings = {}) => {
       from: {
         type: "String!",
       },
+      plain: {
+        type: "Boolean",
+        defaultValue: false,
+      },
     },
 
     extend() {
       return {
         args: {
           from: "String!",
+          plain: "Boolean",
         },
         resolve(source, args) {
-          const fieldValue = source[args.from];
-          return processMarkdown(fieldValue, { tags });
+          const { from, plain } = args
+          const fieldValue = source[from];
+          return processMarkdown(fieldValue, plain, { tags });
         },
       };
     },
