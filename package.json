@@ -25,5 +25,10 @@
     "remark": "^12.0.1",
     "remark-html": "^12.0.0",
     "unist-util-select": "^3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:dinghystudio/gatsby-plugin-markdown-frontmatter-fields.git",
+    "directory": "gatsby-plugin-markdown-frontmatter-fields"
   }
 }
