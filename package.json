@@ -1,0 +1,29 @@
+{
+  "name": "gatsby-plugin-frontmatter-markdown-fields",
+  "version": "0.1.0",
+  "description": "Plugin allowing to add markdown formatted fields to frontmatter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin"
+  ],
+  "author": "Dinghy Studio",
+  "contributors": [
+    {
+      "email": "daniel@dinghy.studio",
+      "name": "Daniel J. Becker"
+    }
+  ],
+  "license": "ISC",
+  "peerDependencies": {
+    "gatsby": "^2.24.58"
+  },
+  "dependencies": {
+    "remark": "^12.0.1",
+    "remark-html": "^12.0.0",
+    "unist-util-select": "^3.0.1"
+  }
+}
