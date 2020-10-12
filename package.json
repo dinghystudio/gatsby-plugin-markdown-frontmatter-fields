@@ -1,6 +1,6 @@
 {
   "name": "@dinghystudio/gatsby-plugin-markdown-frontmatter-fields",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Plugin allowing to add markdown formatted fields to frontmatter",
   "main": "index.js",
   "scripts": {
