@@ -16,7 +16,7 @@ module.exports = {
   plugins: [
     // …
     {
-      resolve: require.resolve(`../gatsby-plugin-markdown-frontmatter-fields`),
+      resolve: require.resolve(`@dinghystudio/gatsby-plugin-markdown-frontmatter-fields`),
       options: {
         tags: ["paragraph"],
       },
