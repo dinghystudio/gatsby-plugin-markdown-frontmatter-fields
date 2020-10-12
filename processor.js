@@ -3,6 +3,8 @@ const remarkHTML = require("remark-html");
 const stripMarkdown = require("strip-markdown");
 const select = require("unist-util-select").select;
 
+const root = require("./handlers/root");
+
 // remove enclosing tags from single child markdown, output of
 // e.g. `some _text_` would usually be `<p>some <i>text</i></p>`
 // with `promoteOnlyChild` output is `some <i>text</i>`
@@ -21,7 +23,7 @@ const processMarkdown = (src, plain = false, settings) => {
   let processor = remark().use(promoteOnlyChild, settings)
 
   if (plain) processor = processor.use(stripMarkdown)
-  else processor = processor.use(remarkHTML)
+  else processor = processor.use(remarkHTML, { handlers: { root } })
 
   return processor
     .processSync(src)
